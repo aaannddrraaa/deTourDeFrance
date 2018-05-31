@@ -27,7 +27,7 @@ const data = [
     body:
       "Fabio Casartelli died here in 1995, descending the slopes of the Portet d'Aspet. After his death, it became mandatory to wear a helmet during the Tour de France.",
     date: '31st May 2018, 9:00AM',
-    img: require('../assets/img1-b.jpg')
+    img: require('../assets/stele_fabio_casartelli_ansa_b.jpg')
   },
   {
     title: 'You start the day in the fortified town of Carcassonne',
@@ -41,7 +41,7 @@ const data = [
     body:
       "The famous bell towers of Pamiers can already be clearly seen in the distance. If you want to know, the town's main square is covered in red marble. And it's not just any square because it was walked by the young Gabriel Faure, one of France's best 19th century composers.",
     date: '31st May 2018, 1:05PM',
-    img: require('../assets/img1-b.jpg')
+    img: require('../assets/img2-b.jpg')
   },
   {
     title: 'You have just entered the Natural Park of the Pyrenees ariégeoises',
@@ -97,8 +97,7 @@ export default class MapScreen extends React.Component {
           style={{
             paddingTop: 20,
             paddingLeft: 15,
-            paddingRight: 15,
-            height: 1000
+            paddingRight: 15
           }}
         >
           {this.state.title ? (
@@ -122,10 +121,10 @@ export default class MapScreen extends React.Component {
             <Image
               source={this.state.img}
               style={{
-                width: width,
+                width: width - 30,
                 marginTop: 25,
                 marginBottom: 25,
-                height: 500
+                height: 200
               }}
             />
           ) : null}
