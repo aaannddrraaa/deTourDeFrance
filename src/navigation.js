@@ -47,8 +47,26 @@ const NewsStack = createStackNavigator(
 );
 
 const DrawerNavigator = createDrawerNavigator({
-	MapStack: { screen: MapStack, navigationOptions: { drawerLabel: 'Map' } },
-	NewsStack: { screen: NewsStack, navigationOptions: { drawerLabel: 'News' } }
+	MapStack: {
+		screen: MapStack,
+		navigationOptions: { drawerLabel: 'Stage Map' }
+	},
+	SocialStack: {
+		screen: MapStack,
+		navigationOptions: { drawerLabel: 'Ride with friends' }
+	},
+	PreviousStages: {
+		screen: MapStack,
+		navigationOptions: { drawerLabel: 'Previous Stages' }
+	},
+	GeneralStandings: {
+		screen: MapStack,
+		navigationOptions: { drawerLabel: 'General standings' }
+	},
+	TourExplanations: {
+		screen: MapStack,
+		navigationOptions: { drawerLabel: 'The Tour Explained' }
+	}
 });
 
 const PrimaryNav = createStackNavigator(
